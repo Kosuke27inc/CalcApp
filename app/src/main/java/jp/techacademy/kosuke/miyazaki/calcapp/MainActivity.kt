@@ -2,7 +2,6 @@ package jp.techacademy.kosuke.miyazaki.calcapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -34,16 +33,16 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        val num1 = num1Str.toDouble()
-        val num2 = num2Str.toDouble()
-        var result = 0.0
+        val num1 = num1Str.toInt()
+        val num2 = num2Str.toInt()
+        var result = 0
 
         when (operator) {
             "+" -> result = num1 + num2
             "-" -> result = num1 - num2
             "*" -> result = num1 * num2
             "/" -> {
-                if (num2 == 0.0) {
+                if (num2 == 0) {
                     Toast.makeText(this, "0で割ることはできません", Toast.LENGTH_SHORT).show()
                     return
                 }

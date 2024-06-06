@@ -12,7 +12,7 @@ class MainActivity2 : AppCompatActivity() {
 
         val resultTextView: TextView = findViewById(R.id.resultTextView)
 
-        val result = intent.getDoubleExtra("result", 0.0)
+        val result = intent.getIntExtra("result", 0)
 
         resultTextView.text = result.toString()
     }

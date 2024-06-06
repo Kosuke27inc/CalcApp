@@ -10,12 +10,13 @@
         android:id="@+id/editText_1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_margin="16dp"
         android:hint="数値1"
-        android:inputType="numberDecimal|numberSigned" />
+        android:inputType="numberDecimal|numberSigned"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill" />
 
     <EditText
         android:id="@+id/editText_2"
